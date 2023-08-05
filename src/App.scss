@@ -1,0 +1,62 @@
+$primary-color:#aaff00;
+
+@import "animate.css";
+@import "~loaders.css/src/animations/line-scale.scss";
+@font-face{
+  font-family: "Helvetica Neue";
+  src:url("./assets/fonts/helvetica-neu.ttf") format("ttf");
+}
+@font-face{
+  font-family: "La Belle Aurore";
+  src:url("./assets/fonts/LaBelleAurore.woff2") format("woff2");
+}
+@font-face{
+  font-family: "Coolvetica";
+  src:url("./assets/fonts/CoolveticaRg-Regular.woff2") format("woff2");
+}
+
+::selection{
+  background-color: $primary-color;
+  color:tomato;
+}
+::-webkit-scrollbar{
+  background-color: grey;
+  width:5px;
+  cursor: pointer;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 100px;
+  background-color: $primary-color;
+}
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+html{
+  font-size:62.5%;
+}
+body {
+  margin: 0;
+  font: 300 11px/1.4 "Helvetica Neue", sans-serif;
+  color:#444;
+  background-color: #022c43;
+  overflow:hidden;
+  display:block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.loader-active{
+  display: block;
+  position: absolute;
+  left:0;
+  right:0;
+  margin:auto;
+  top:0;
+  bottom:0;
+  width:50px;
+  height:50px;
+  animation:fadeOut 1s 1s;
+  animation-fill-mode:forwards;
+}

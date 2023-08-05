@@ -1,0 +1,44 @@
+$primary-color:#aaff00;
+.project__card{
+    background-color: $primary-color;
+    display:flex;
+    flex-direction: column;
+    height:80%;
+    width:350px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor:pointer;
+
+    img{
+        height:40%;
+        object-fit:cover;
+    }
+    .project__content{
+        color:black;
+        padding:10px 20px;
+        height:60%;
+        h2{
+            font-size:23px;
+            margin-bottom:10px;
+        }
+        p{
+            font-size:18px;
+        }
+        ul{
+            padding-left:30px;
+            li{
+                font-size:20px;
+                &::marker{
+                    color:black;
+                    font-size:30px;
+                }
+            }
+
+        }
+    }
+    &:hover{
+        animation:pulse 1s  forwards;
+    }   
+}
+
+

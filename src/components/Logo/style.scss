@@ -1,0 +1,25 @@
+
+$primary-color:#aaff00;
+.logo-container {
+    z-index: -1;
+    width:400px;
+    width:609px;
+    position: absolute;
+    top:0;
+    right:15%;
+    bottom:0;
+    left:auto;
+    margin:auto;
+    .solid-logo{
+        position: absolute;
+        top:auto;
+        bottom:auto;
+        right:auto;
+        left:0;
+        margin:auto;
+        width:100%;
+        transform:rotateZ(30deg);
+        opacity:0;
+        animation: fadeIn 2s 2s forwards;
+    }
+}

@@ -1,0 +1,101 @@
+$primary-color:#aaff00;
+.page{
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    padding-left:100px;
+}
+.tags{
+    color: $primary-color;
+    opacity: 0.6;
+    position:absolute;
+    font-size:18px;
+    font-family: "La Belle Aurore";
+}
+.top-tags{
+    top:35px;
+}
+.bottom-tags{
+    bottom:30px;
+}
+
+.page--content{
+    width:100%;
+    height:90%;
+    min-height:566px;
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    will-change:contents;
+    transform-style: preserve-3d;
+    opacity:0;
+    animation: fadeIn 1s 1s forwards;
+}
+
+.about-page,
+.contact--page{
+    .text-zone{
+        position:absolute;
+        left:10%;
+        top:50%;
+        transform:translateY(-50%);
+        width:35%;
+        vertical-align:middle;
+        display:table-cell;
+        max-height:90%;
+
+        h1{
+            font-size:73px;
+            font-family:'Coolvetica';
+            color:$primary-color;
+            font-weight:400;
+            margin-top:0;
+            position:relative;
+            margin-bottom:40px;
+            left:10px;
+            &::before{
+                content:'<h1>';
+                font-family: "La Belle Aurore";
+                font-size:18px;
+                line-height:18px;
+                position:absolute;
+                margin-top:-10px;
+                left:-10px;
+                opacity:0.6;
+            }
+            &::after{
+                content: "</h1>";
+                font-family: "La Belle Aurore";
+                font-size:18px;
+                line-height:18px;
+                position:absolute;
+                left:-30px;
+                bottom:-20px;
+                margin-left:20px;
+                opacity:0.6;
+            }
+        }
+        p{
+            font-size:18px;
+            color:white;
+            font-family: sans-serif;
+            font-weight: 300;
+            min-width: fit-content;
+            animation: pulse 1s;
+            &:nth-of-type(1){
+                animation-delay:1.1s;
+            }
+            &:nth-of-type(2){
+                animation-delay:1.1s;
+            }
+            &:nth-of-type(3){
+                animation-delay:1.1s;
+            }
+        }
+    }
+    .text-animate-hover{
+        &:hover{
+            color:white;
+        }
+    }
+}
