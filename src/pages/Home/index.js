@@ -13,7 +13,6 @@ function Home(){
         },4000)
     },[])
     
-    console.log('smashed')
     return(
         <>
         <Loader type="line-scale"/>
@@ -45,7 +44,7 @@ function Home(){
                         />
                 </h1>
                 <h2>FullStack Developer / JavaScript Expert </h2>
-                <Link to="/contact" className="flat-button">CONTACT ME</Link>
+                <Link  to="/contact" className="flat-button">CONTACT ME</Link>
             </div>
             <Logo />
         </div>

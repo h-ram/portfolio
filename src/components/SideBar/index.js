@@ -3,6 +3,7 @@ import {Link, NavLink} from "react-router-dom"
 import logoS from "../../assets/images/logo-r.png"
 import logoSub from "../../assets/images/logo-ram.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import gsap from "gsap-trial"
 import { 
     faHome, 
     faUser, 
@@ -15,6 +16,17 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 function SideBar(){
+    function exitPage(event){
+        event.preventDefault()
+        gsap.to(".page--content",{
+            duration:0.4,
+            x:"-150%"
+        })
+        setTimeout(()=>{
+            window.location.href =  event.target.href
+        },500)
+    } 
+   
     return(
         <div className="nav-bar">
             <Link className="logo" to="/">
@@ -23,34 +35,36 @@ function SideBar(){
             </Link>
             <nav>
                 <NavLink 
+                    onClick={exitPage}
                     exact
                     to="/">
                     <FontAwesomeIcon icon={faHome} color="#4d4d4e" /> 
                 </NavLink>
                 <NavLink 
+                    onClick={exitPage}
                     exact
                     to="/projects">
                     <FontAwesomeIcon icon={faCode} color="#4d4d4e" /> 
                 </NavLink>
                 <NavLink 
+                    onClick={exitPage}
                     exact
                     to="/about">
                     <FontAwesomeIcon icon={faUser} color="#4d4d4e" /> 
                 </NavLink>
                 <NavLink 
+                    onClick={exitPage}
                     exact
                     to="/contact">
                     <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" /> 
                 </NavLink>
-               
-                
             </nav>
             <ul>
                 <li>
                     <a 
                         target="_blank"
                         rel="noreferrer"
-                        href="https://youtube.com">
+                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
                         <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e"/>
                     </a>
                 </li>
@@ -58,7 +72,7 @@ function SideBar(){
                     <a 
                         target="_blank"
                         rel="noreferrer"
-                        href="https://youtube.com">
+                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
                         <FontAwesomeIcon icon={faGithub} color="#4d4d4e"/>
                     </a>
                 </li>
@@ -66,7 +80,7 @@ function SideBar(){
                     <a 
                         target="_blank"
                         rel="noreferrer"
-                        href="https://youtube.com">
+                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
                         <FontAwesomeIcon icon={faDiscord} color="#4d4d4e"/>
                     </a>
                 </li>
