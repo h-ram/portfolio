@@ -23,24 +23,21 @@ function About(){
                         idx={15}
                     />
                 </h1>
-                <p>
-                    I'm a passionate and dedicated full-stack developer
-                    with an expertise in JavaScript. With several years of 
-                    experience under my belt,I have honed my skills to deliver
-                    top-notch web applications and solutions.</p>
-                <p>
-                    On the backend, I'm well-versed in Node.js, Express.js,
-                    and other server-side technologies. I enjoy designing 
-                    efficient and scalable APIs, integrating databases, 
-                    and ensuring the security and performance of the applications
-                    I build.
+                <p>Seasoned full-stack developer proficient in crafting seamless web experiences.
+                    Expert in Vanilla JavaScript and React for dynamic front-end interfaces, NodeJs for 
+                    backend shenanigans. Git master for seamless collaboration,
+                    and skilled in SCSS/CSS for polished designs.
+                    </p>
+                    <br/>
+                <p> An Intermidate when it comes to DSA using C++ ,
+                    And well versed in scripting and automation with 🥧thon .               
                 </p>
             </div>
 
             <div className="stage-cube-container">
                 <div className="cubespinner">
                     <div className="face1">
-                        <FontAwesomeIcon icon={faNodeJs}/>
+                        <FontAwesomeIcon icon={faNodeJs} color="#215732"/>
                     </div>
                     <div className="face2">
                         <FontAwesomeIcon icon={faHtml5}/>

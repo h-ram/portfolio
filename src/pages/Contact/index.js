@@ -37,8 +37,8 @@ function Contact(){
                     />
                 </h1>
                 <p>
-                    I am interested in freelance oppertunities - especially ambitious or 
-                    large projects, However, if you have other requests or questions,
+                    Interested in freelancing oppertunities - a remote position with any given timezone
+                    . Large to medium projects mostly , However, if you have other requests or questions,
                     don't hesistate to contact me.
                 </p>
                 <div className="contact--form">

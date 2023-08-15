@@ -11,8 +11,7 @@ import {
     faCode} from "@fortawesome/free-solid-svg-icons"
 import {
   faLinkedin,
-  faGithub,
-  faDiscord,
+  faGithub
 } from '@fortawesome/free-brands-svg-icons'
 
 function SideBar(){
@@ -64,7 +63,7 @@ function SideBar(){
                     <a 
                         target="_blank"
                         rel="noreferrer"
-                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        href="https://www.linkedin.com/in/ram-h-337697281/">
                         <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e"/>
                     </a>
                 </li>
@@ -72,7 +71,7 @@ function SideBar(){
                     <a 
                         target="_blank"
                         rel="noreferrer"
-                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        href="https://github.com/h-ram">
                         <FontAwesomeIcon icon={faGithub} color="#4d4d4e"/>
                     </a>
                 </li>
@@ -80,8 +79,8 @@ function SideBar(){
                     <a 
                         target="_blank"
                         rel="noreferrer"
-                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                        <FontAwesomeIcon icon={faDiscord} color="#4d4d4e"/>
+                        href="https://leetcode.com/lRaml/">
+                        <FontAwesomeIcon icon={faCode} color="#4d4d4e"/>
                     </a>
                 </li>
             </ul>

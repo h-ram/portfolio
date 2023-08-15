@@ -36,12 +36,11 @@ function Projects(){
                         return <li>{t}</li>
                     })}
                 </ul>
-                <button>Check Out</button>
+                <a class="checkOut" href={lang.data[activePreview].url} target="_blank">Check Out</a>
             </main>
         </div>
     )
 
-    console.log(activePreview)
     const JSList = JSData.map((p)=>{
         return (
             <div 

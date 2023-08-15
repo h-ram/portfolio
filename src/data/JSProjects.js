@@ -1,10 +1,20 @@
-
+import ramsh from "../assets/images/ramsh.png"
+import ramos from "../assets/images/ramos.png"
 export default [
     {
         id:"1",
-        imgURL:"https://deepnapsoftech.com/wp-content/uploads/2022/02/whatsapp-chatbot.png",
-        name: "Whatsapp Bot",
-        desc: "TransBot is a WhatsApp bot that translates messages in real-time, breaking language barriers effortlessly. Say hello to global conversations! 🌐💬",
-        tools:["NodeJs","Flutter"]
-    }
+        imgURL:ramsh,
+        name: "Ram-SH",
+        desc: "Light Weight Web Terminal Emulator. >_",
+        tools:["Vanilla JS","HTML/CSS"],
+        url:"https://h-ram.github.io/RamSH"
+    },
+    {
+        id:"2",
+        imgURL:ramos,
+        name: "Ram-OS",
+        desc: "A Parody Operating System",
+        tools:["Vanilla JS","HTML/CSS"],
+        url:"https://h-ram.github.io/RamOS"
+    },
 ]

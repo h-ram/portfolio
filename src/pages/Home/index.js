@@ -21,7 +21,7 @@ function Home(){
                 <h1>
                     <AnimatedLetters 
                         letterClass={letterClass}
-                        text="Hi,"
+                        text="Hi"
                         idx={4}
                         />
                     <br/> 
@@ -33,13 +33,13 @@ function Home(){
                     <img src={LogoTitle} alt="developer"/>
                     <AnimatedLetters 
                         letterClass={letterClass}
-                        text="am"
+                        text="am ,"
                         idx={4}
                         />
                     <br/>
                     <AnimatedLetters 
                         letterClass={letterClass}
-                        text="web developer"
+                        text="A Web Developer"
                         idx={4}
                         />
                 </h1>

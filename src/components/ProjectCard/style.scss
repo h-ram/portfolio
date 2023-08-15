@@ -11,7 +11,9 @@ $primary-color:#aaff00;
 
     img{
         height:40%;
-        object-fit:cover;
+        width:100%;
+        object-fit:contain;
+        display: block;
     }
     .project__content{
         color:black;

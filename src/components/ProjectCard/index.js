@@ -4,7 +4,6 @@ function ProjectCard(props){
     const tls = tools.map((t)=>{
         return <li key={"t-"+id}>{t}</li>
     })
-    console.log("tls" + tls)
     return (
         <div className="project__card">
             <img src={imgURL} alt="project image"/>
